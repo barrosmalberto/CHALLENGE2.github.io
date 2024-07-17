@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Alberto</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #f4f4f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #008;
+        }
+
+        #profile p {
+            color: #222;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Perfil de Alberto</h1>
+        <div id="profile">
+            <p id="name"></p>
+            <p id="age"></p>
+            <p id="profession"></p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const profile = {
+                name: "Alberto",
+                age: 27,
+                profession: "Geógrafo"
+            };
+
+            document.getElementById("name").textContent = `Nome: ${profile.name}`;
+            document.getElementById("age").textContent = `Idade: ${profile.age} anos`;
+            document.getElementById("profession").textContent = `Profissão: ${profile.profession}`;
+        });
+    </script>
+</body>
+</html>
